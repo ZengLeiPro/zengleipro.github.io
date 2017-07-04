@@ -1,0 +1,175 @@
+<!Doctype html>
+<html lang="zh-CN">
+
+    <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,minimum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>使用Privoxy让Dropbox智能代理上网</title>
+    <meta name="theme-color" content="#007b8b">
+    <meta name="mobile-web-app-capable" content=yes>
+    <meta name="application-name" content="Zeng Lei">
+    <meta name="msapplication-starturl" content="http://zenglei.net">
+    <meta name="msapplication-navbutton-color" content="#007b8b">
+    <meta name="apple-mobile-web-app-capable" content=yes>
+    <meta name="apple-mobile-web-app-title" content="Zeng Lei">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="http://st.imququ.com/static/img/blog/icon.png">
+    <link rel=manifest href="/static/manifest.json">
+    <link rel=search type="application/opensearchdescription+xml" href="/opensearch.xml" title="Zeng Lei">
+    <link rel=alternate type="application/rss+xml" title="RSS 2.0" href="http://zenglei.net/feed.xml">
+    <link href="/css/main.css" rel="stylesheet">
+    <meta name=description content="最近身边越来越多人对同步感兴趣，我给他们的建议就是坚持使用Dropbox，不使用国内的类似工具。理由很简单：不安全。不要以为自己是良民就没事，国内的网络环境已经不单是用恶劣可以形容的了，简直到了神经质的状态。">
+    <link href="/css/blog_more.css" rel="stylesheet">
+</head>
+
+    <body>
+        <div class=container>
+
+            <h3 aria-hidden=true class="global-tips">如果你看到这段文字，说明本地存储文件已损坏。<a href="?clear_ls=1" rel=nofollow>请点击本链接自动修复</a>！</h3>
+
+            <div class="left-col">
+    <div class="intrude-less">
+        <header id=header class=inner>
+            <div class=profilepic><a href="/"></a></div>
+            <h1><a href="/">Zeng Lei</a></h1>
+            <p class=subtitle>The blog of Zeng Lei</p>
+            <nav id="main-nav">
+                <ul>
+                    <li class=on ><a href="/"><span>首页</span></a>
+                    <li ><a href="/post/series.html"><span>专题</span></a>
+                    <li ><a href="/post/archives.html"><span>归档</span></a>
+                    <li ><a href="/post/blogroll.html"><span>友链</span></a>
+                    <li ><a href="/post/about.html"><span>关于</span></a>
+                </ul>
+            </nav>
+            <nav id="sub-nav">
+                <div class=social>
+                    
+                    <a class="twitter external" rel=nofollow href="http://twitter.com/zengleipro" title="@zengleipro" aria-label=Twitter target="_blank">Twitter</a>
+                    
+                    <a class=rss href="http://zenglei.net/feed.xml" title="RSS 订阅" aria-label="RSS 订阅">RSS</a>
+                    <a class=search href="/search.html" title="站内搜索" aria-label="站内搜索">Search</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+</div>
+
+            <div class="mid-col">
+                <div class="mid-col-container">
+
+                    <div id=content class=inner>
+  <article class="post post-250">
+    <div class=meta>
+        <div class=date><time>2011-03-21</time></div>
+        <div class="date-modified"><time></time></div>
+        <div class=comment><a href="#comments"></a></div>
+    </div>
+    <h1 class=title>使用Privoxy让Dropbox智能代理上网</h1>
+    <div class="entry-content">
+      <p>最近身边越来越多人对同步感兴趣，我给他们的建议就是坚持使用Dropbox，不使用国内的类似工具。理由很简单：不安全。不要以为自己是良民就没事，国内的网络环境已经不单是用恶劣可以形容的了，简直到了<a href="http://blog.sina.com.cn/s/blog_473d533601017oyy.html" target="_blank">神经质的状态</a>。</p>
+
+<p>既然网络环境这么差，Dropbox当然不能幸免。要用好还是需要花些功夫的，这篇文章介绍的这个技巧我觉得不错，原文在墙外，为了以后给人推荐时省得麻烦，我就直接转过来了。</p>
+
+<p>以下为转载。<a href="http://plusium.blogspot.com/2011/03/privoxydropbox.html" target="_blank">原文地址</a></p>
+
+<p>本文撰于2011/03/20，背景是，中国大陆到dropbox.com的http连接会被重置，但是https连接不受影响。如果背景改变了，则本文失效。本文原始链接：http://plusium.blogspot.com/2011/03/privoxydropbox.html</p>
+
+<p>本文主题：令dropbox客户端的http请求经socks代理访问dropbox服务器，而https请求不经代理直接访问。如图：</p>
+
+<p><img src="http://lh3.ggpht.com/_EBKhIGWdptk/TYWwFpF_R1I/AAAAAAAAACU/xyvWjw2TWtc/1_thumb1.png?imgmax=800" alt="" /></p>
+
+<p>高手们只需看到这就行了。以下是详细操作说明。</p>
+
+<p>目前在墙内，dropbox被关键字屏蔽（Wildcard: .dropbox.com），但是客户端还能正常使用，因为客户端和服务器之间使用的是https加密传输。但只有一处是没有使用https的，就是stork47.dropbox.com（在我这是这个地址，其他地方可能不一样）。这个服务器负责将服务器端（或其他客户端）发生的文件更新通知到其他客户端（我猜的，但应该差不多），然后其他客户端才会发起https请求去和服务器同步这些文件。实际中，是客户端每60秒向stork47.dropbox.com查询一次，看是否有文件需要更新。因为该请求没有使用https连接，导致连接一直被RESET，所以某台客户端的更新无法实时反映到其他客户端。</p>
+
+<p>因为一般人可能没有这个需求，所以没多少人关注这个课题。像我以前也只是在家里和公司同步一些文件而已，没有实时更新的必要。有强烈需求的人，就设置让客户端全程走代理，可以解决上述问题，缺点是文件的更新速度受代理服务器速度的影响，大多数情况下没有直接连接的速度快。还有一部分人当需要更新时，直接重启客户端（甚至为此写了个脚本），因为客户端只在启动时才使用https连接检查更新，这样做的缺点显而易见。</p>
+
+<p>最近用privoxy，发现它可以做到分流http和https，于是试验了一下，果然可以分流dropbox的客户端请求了。就是前面说的，让http请求走代理，而https请求不走。这样即满足了实时更新的需求，又兼顾了更新速度，可谓智能代理了。而且我搜索“dropbox privoxy”，google.com.hk前几页都没有关于这个方法的介绍，所以我这个便算原创了。至于是不是第一个，应该还有高人在，只是我没搜出来而已。因为privoxy还有不少替代方案我没有试过的，比如polipo之类。以下是操作步骤。</p>
+
+<ol>
+  <li>
+    <p>需要准备的东西：dropbox客户端（还没注册的请点我的邀请链接注册）、代理软件、privoxy。privoxy的官网是http://www.privoxy.org/，不知道下哪一个的话就点这里直接下载win32下的3.0.17稳定版http://sourceforge.net/projects/ijbswa/files/Win32/3.0.17%20(stable)/privoxy-3.0.17.zip/download。该方案应该与平台无关，但是我只在windows 7下试验过。</p>
+  </li>
+  <li>
+    <p>打开privoxy的配置文件config.txt，在最后面添加这几行：</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="k">for </span>dropbox: http --&gt; SOCKS Proxy<span class="o">(</span>19841<span class="o">)</span>, https --&gt; direct
+  forward-socks5   .dropbox.com             127.0.0.1:19841 .
+  forward          .dropbox.com:443         .
+</code></pre>
+</div>
+
+<p>注意将19841修改为你自己的代理软件的端口。如果你的代理软件不是socks类型的，那么就不是加上面的几行，而是加这几行：</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="k">for </span>dropbox: http --&gt; HTTP Proxy<span class="o">(</span>19842<span class="o">)</span>, https --&gt; direct
+  forward          .dropbox.com             127.0.0.1:19842
+  forward          .dropbox.com:443         .
+</code></pre>
+</div>
+
+<p>注意好多地方有半角的.号，不要弄丢了。</p>
+
+<ol>
+  <li>启动privoxy，将dropbox的代理设置为HTTP 127.0.0.1:8118，就OK了。</li>
+</ol>
+
+<p>如果有疑问可以留言讨论，如果有关于软件的其他用法的问题请另行google。</p>
+
+    </div>
+  </article>
+
+  <nav class="page-navi">
+    
+    
+    <a href="/2011/03/thoughts-of-japan-earthquake/" class=prev>« 关于日本这次地震的感想</a>
+    
+
+    
+    
+    <a href="/2011/04/rio/" class="next">RIO观后感 »</a>
+    
+</nav>
+  <section id=comments>
+    <h1 class=title>Comments</h1>
+    
+    <div class=total_thread data-identifier="post-troubleshooting-https" data-url="/2011/03/dropbox-privoxy/">
+    </div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = "http://zenglei.net/2011/03/dropbox-privoxy/";
+            this.page.identifier = "/2011/03/dropbox-privoxy/";
+        };
+        var disqus_shortname = 'ZengLeiPro';
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+    </script>
+    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+    
+</section>
+  
+</div>
+                    
+                </div>
+
+                <footer id=footer class=inner>&copy;&nbsp;2017&nbsp;-&nbsp;JerryQu 的小站&nbsp;-&nbsp;<a target=_blank rel="nofollow noopener" class="external beian" href="http://www.miitbeian.gov.cn/">京 ICP 备 15046275 号</a><br>Powered by&nbsp;<a href="/post/readme.html">ThinkJS</a>&nbsp;&amp;&nbsp;<a target=_blank rel="nofollow noopener" class=external href="//github.com/shashankmehta/greyshade">GreyShade</a></footer>
+
+            </div>
+
+        </div>
+
+        <input type=hidden id=CURRENT_PAGE value="blog-home">
+        <input type=hidden id=CDN_DOMAIN value="https://st.imququ.com">
+
+        
+
+    </body>
+</html>
