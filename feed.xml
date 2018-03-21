@@ -3,21 +3,274 @@
   <channel>
     <title>Zeng Lei</title>
     <description></description>
-    <link>https://zenglei.net/</link>
-    <atom:link href="https://zenglei.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Aug 2017 09:51:43 -0500</pubDate>
-    <lastBuildDate>Thu, 10 Aug 2017 09:51:43 -0500</lastBuildDate>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 21 Mar 2018 10:04:28 -0500</pubDate>
+    <lastBuildDate>Wed, 21 Mar 2018 10:04:28 -0500</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
+        <title>区块链是否真的那么有应用价值？</title>
+        <description>&lt;p&gt;江宏的第二篇区块链文章解答了很多我之前的疑问，真的是牛：http://1byte.io/cryptocurrencies-and-blockchains-consensus-and-decentralization/&lt;/p&gt;
+
+&lt;p&gt;以下是一点聊天记录，有空在整理。&lt;/p&gt;
+
+&lt;p&gt;首先该看看他前面对区块链的三分钟讲解。&lt;/p&gt;
+
+&lt;p&gt;算力达到一定比例，这帮算力就可以故意制造假数据&lt;/p&gt;
+
+&lt;p&gt;而这些假数据和另外的真实数据就会产生分叉&lt;/p&gt;
+
+&lt;p&gt;POW机制下的货币就会根据谁产生了更长的交易记录来判断谁是应该保留下来的分叉，然后抛弃其他分叉&lt;/p&gt;
+
+&lt;p&gt;这就是算力风险&lt;/p&gt;
+
+&lt;p&gt;准确的说叫做分支&lt;/p&gt;
+
+&lt;p&gt;区块链不能区分什么是真假？&lt;/p&gt;
+
+&lt;p&gt;当然不能&lt;/p&gt;
+
+&lt;p&gt;他只能通过一种手段来裁定真假&lt;/p&gt;
+
+&lt;p&gt;大部分以比特币为代表的货币采用的是POW&lt;/p&gt;
+
+&lt;p&gt;proof of work&lt;/p&gt;
+
+&lt;p&gt;工作量证明&lt;/p&gt;
+
+&lt;p&gt;所谓的工作量，也就是体现成了算力&lt;/p&gt;
+
+&lt;p&gt;也就是大多数人认同的就承认了？&lt;/p&gt;
+
+&lt;p&gt;不是&lt;/p&gt;
+
+&lt;p&gt;是交易笔数更多的就承认&lt;/p&gt;
+
+&lt;p&gt;举个例子，比特币运行到了现在这个时间点，忽然有两个人发起了两笔不同的记账，第一笔账：你的账户转了500个币给我。第二笔账：你的账号转了5个币给我&lt;/p&gt;
+
+&lt;p&gt;那么这个时候就出现了分支&lt;/p&gt;
+
+&lt;p&gt;怎么判断真假？继续等&lt;/p&gt;
+
+&lt;p&gt;方法是两个都先不当真&lt;/p&gt;
+
+&lt;p&gt;然后让这两个分支一直做后续的交易记录&lt;/p&gt;
+
+&lt;p&gt;然后看谁的交易记录做的更多，说明那一边的支持度更高&lt;/p&gt;
+
+&lt;p&gt;那就承认他，抛弃另一个分支&lt;/p&gt;
+
+&lt;p&gt;这种方式在大部分情况下是可行的&lt;/p&gt;
+
+&lt;p&gt;实际上比特币这么多年无时无刻不在产生分支，因为我说了，要篡改广播数据很简单。但是大部分窜改的分支都失败了，因为他们得不到算力的支持&lt;/p&gt;
+
+&lt;p&gt;广播不是算力，你也可以广播&lt;/p&gt;
+
+&lt;p&gt;但是你广播了一条记录说李笑来转给你500个币，需要有别的算力愿意在你这个假分支上继续记账&lt;/p&gt;
+
+&lt;p&gt;我之前也被误导了，一直以为是要51%的算力来窜改才有可能改变记录&lt;/p&gt;
+
+&lt;p&gt;但是现在看来38%就有很大概率了&lt;/p&gt;
+
+&lt;p&gt;算力在谁手上？&lt;/p&gt;
+
+&lt;p&gt;这个你很清楚&lt;/p&gt;
+
+&lt;p&gt;各大矿场&lt;/p&gt;
+
+&lt;p&gt;矿场主不是很容易联合起来造假&lt;/p&gt;
+
+&lt;p&gt;https://www.extremetech.com/extreme/184427-one-bitcoin-group-now-controls-51-of-total-mining-power-threatening-entire-currencys-safety&lt;/p&gt;
+
+&lt;p&gt;2014 年时确实曾经有一个矿池 GHash 的算力超过了比特币网络的 50% 长达至少 12 个小时&lt;/p&gt;
+
+&lt;p&gt;后来被ddos了&lt;/p&gt;
+
+&lt;p&gt;在 2016 年底的时候 75% 的比特币算力来自于新疆的一座建筑，Bitmain 回应质疑时称这座建筑有多个主人，所以并没有一家独大。2017 年中时，三个矿池控制了 50% 的算力&lt;/p&gt;
+
+&lt;p&gt;六个矿池控制了 75% 的算力，并且很可能多个大矿池被同样的人实际控制，这么少的人也很容易结成联盟。&lt;/p&gt;
+
+&lt;p&gt;这是比特币的情况&lt;/p&gt;
+
+&lt;p&gt;可想而知其他币是更糟&lt;/p&gt;
+
+&lt;p&gt;你记得我们用bread钱包在手机上转账吧&lt;/p&gt;
+
+&lt;p&gt;我转给你为什么需要等待时间确认&lt;/p&gt;
+
+&lt;p&gt;不仅仅是因为记账慢&lt;/p&gt;
+
+&lt;p&gt;而是要让整个算力的75%记了你这笔账，才比较保险&lt;/p&gt;
+
+&lt;p&gt;75%是现在的标准？&lt;/p&gt;
+
+&lt;p&gt;是每个交易者自己认为的安全线&lt;/p&gt;
+
+&lt;p&gt;如果我找你买东西，转给你5个币，但是只有30%的算力记了我的账，你就已经把东西给我了&lt;/p&gt;
+
+&lt;p&gt;那如果我当时转的这笔账是假记录，或者我真的转了，但是正好我在一个假分支上&lt;/p&gt;
+
+&lt;p&gt;后面被取消了&lt;/p&gt;
+
+&lt;p&gt;钱就回到我账户了&lt;/p&gt;
+
+&lt;p&gt;你就人财两空&lt;/p&gt;
+
+&lt;p&gt;怎么分辨是不是在假分支上？&lt;/p&gt;
+
+&lt;p&gt;没法分辨&lt;/p&gt;
+
+&lt;p&gt;假分支还能取消的？&lt;/p&gt;
+
+&lt;p&gt;他假设你已经有38%的算力了&lt;/p&gt;
+
+&lt;p&gt;那么你发布了一条假记录&lt;/p&gt;
+
+&lt;p&gt;这时候你和真实交易记录产生了分支&lt;/p&gt;
+
+&lt;p&gt;我们就先把问题简单化，现在全网络就只有两条分支，你的假分支，和主链上的真分支&lt;/p&gt;
+
+&lt;p&gt;那么根据比特币的代码可以推算得出，系统要判断你这条数据分支和另一条哪条是真的，需要看看这两条分支谁先接着记录了80条交易&lt;/p&gt;
+
+&lt;p&gt;不对，不是80条交易&lt;/p&gt;
+
+&lt;p&gt;是80个块&lt;/p&gt;
+
+&lt;p&gt;比交易条数多了非常多&lt;/p&gt;
+
+&lt;p&gt;按照现在的算力和哈希值计算难度来算，需要14小时&lt;/p&gt;
+
+&lt;p&gt;但交易早就完成了&lt;/p&gt;
+
+&lt;p&gt;但后面被撤销了&lt;/p&gt;
+
+&lt;p&gt;所以他说没人会等这么久&lt;/p&gt;
+
+&lt;p&gt;如果是买卖，早已人财两空&lt;/p&gt;
+
+&lt;p&gt;所以这就是高风险的地方？&lt;/p&gt;
+
+&lt;p&gt;其中一点&lt;/p&gt;
+
+&lt;p&gt;明白了这种工作量证明的判断方式&lt;/p&gt;
+
+&lt;p&gt;你就可以自己想出来其他奉献了&lt;/p&gt;
+
+&lt;p&gt;比如网络屏蔽&lt;/p&gt;
+
+&lt;p&gt;比如海底光缆故障，或者是某个国家的防火墙暂时切断了国际流量。如果被分隔开的是整个网络的一小部分，比如新西兰到澳大利亚之间的光缆断了，那么这个小的部分（新西兰）会因为缺乏算力而无法确认任何交易，直到重新和外界连接起来。如果是整个网络分成了算力相差不大的两部分，比如中国和其他国家，那么区块链会在这两部分分别有不同的分支。当恢复正常后，就会导致其中较短的分支被丢弃，而此时这个分支很可能已经很长，很多用户以为已经确认的交易会被取消。&lt;/p&gt;
+
+&lt;p&gt;这是他文章的一个例子，也很好&lt;/p&gt;
+
+&lt;p&gt;较短的就被丢弃了？&lt;/p&gt;
+
+&lt;p&gt;对&lt;/p&gt;
+
+&lt;p&gt;不管多长&lt;/p&gt;
+
+&lt;p&gt;系统必须保证一致性&lt;/p&gt;
+
+&lt;p&gt;这不是很容易被操控吗&lt;/p&gt;
+
+&lt;p&gt;对普通人不容易&lt;/p&gt;
+
+&lt;p&gt;这也是中本聪当时论文的初衷&lt;/p&gt;
+
+&lt;p&gt;他觉得你要搞假交易是很难的，只要这个系统足够大，算力就将平均掉&lt;/p&gt;
+
+&lt;p&gt;正义终将胜利&lt;/p&gt;
+
+&lt;p&gt;对&lt;/p&gt;
+
+&lt;p&gt;很多人喜欢说区块链是 secured by math，意思是说它的安全性是有数学定理保证的，坚不可破的。让我们先忽略逆向计算哈希函数的难度是个猜想而不是定理这个细节，基于 PoW 的区块链的根本假设是恶意攻击者没法比所有诚实矿工都算得更快，所以它们的安全性是基于经济学而不是数学，然而垄断在市场中并不是异常现象。比特币在发展的过程中由于规模经济的原因（规模越大越容易降低挖矿成本）自然地走向了中心化。&lt;/p&gt;
+
+&lt;p&gt;你再看他这段话&lt;/p&gt;
+
+&lt;p&gt;牛逼了&lt;/p&gt;
+
+&lt;p&gt;在其他因素不变的情况下，去中心是一个很有益的性质，然而它不是一个独立的变量。在计算和通讯技术没有突破性的发展之前，难以在互联网环境下实现大规模的高效、安全、可靠的去中心化系统。比特币、以太坊和目前主流的区块链在设计上选择了完全去中心化，所以每秒能处理的交易量基本都在个位数或小几十，安全性如本文所说存在着很大的问号，去中心化也因为规模效应被破坏。在去中心化的假设下设计的系统由于原来的假设不成立而变得中心化以后，意味着这些中心得不到应有的监管和保护，结果往往是集两者缺点于一身。&lt;/p&gt;
+
+&lt;p&gt;尽管传统的机构和组织存在着各种各样的问题，但区块链的原理和设计假设难以说服我基于它的大规模去中心化系统会比受到监管、保护、制衡的中心机构更加可靠。我认为区块链未来在一些特定领域可能会成为创造出很高实际价值的工具，但是成功的系统会是多个设计维度平衡妥协的结果。对于去中心化有过于浪漫的想法，或者认为区块链会像互联网一样改变一切的人恐怕是会失望的。如果一个区块链的项目说他们在做一个完全去中心化，并且可以安全可靠地每秒处理十万交易的平台，请牢记一句被证明了无数遍的话：If something is too good to be true, it is too good to be true.&lt;/p&gt;
+
+&lt;p&gt;目前试图提高区块链效率的项目几乎全是通过在一定程度上放弃去中心化来换取效率，而对很多应用场景来说这又有违使用区块链的初衷，并且一旦削弱了对去中心化的要求，往往会有其它更加简单可靠的方案。&lt;/p&gt;
+
+&lt;p&gt;如果他说的互联网技术和环境有了突破性发展呢&lt;/p&gt;
+
+&lt;p&gt;这种突破性发展目前并未看到&lt;/p&gt;
+
+&lt;p&gt;这是基础建设，是循序渐进&lt;/p&gt;
+
+&lt;p&gt;除非忽然冒出一个爱因斯坦&lt;/p&gt;
+
+&lt;p&gt;不然你就得从2G到5G，从52K到百兆光纤，慢慢来&lt;/p&gt;
+
+&lt;p&gt;刚才说的这些都是基于比特币的POW证明机制&lt;/p&gt;
+
+&lt;p&gt;现在有别的方式&lt;/p&gt;
+
+&lt;p&gt;比如POS&lt;/p&gt;
+
+&lt;p&gt;proof of stack&lt;/p&gt;
+
+&lt;p&gt;steem就是这个好像&lt;/p&gt;
+
+&lt;p&gt;通过点赞和其他算法来实现证明&lt;/p&gt;
+
+&lt;p&gt;反正更多漏洞&lt;/p&gt;
+
+&lt;p&gt;但大多数币还都是pow？&lt;/p&gt;
+
+&lt;p&gt;对&lt;/p&gt;
+
+&lt;p&gt;只要你听到算力，就是pow&lt;/p&gt;
+
+&lt;p&gt;一般通过两种硬件来实现算力&lt;/p&gt;
+
+&lt;p&gt;一种是GPU，一种是ascii机&lt;/p&gt;
+
+&lt;p&gt;本质都是一样&lt;/p&gt;
+
+&lt;p&gt;这些技术缺陷其实大佬们不懂吗？肯定都理解比我们深刻&lt;/p&gt;
+
+&lt;p&gt;只是从来不说&lt;/p&gt;
+
+&lt;p&gt;我认为区块链未来在一些特定领域可能会成为创造出很高实际价值的工具，但是成功的系统会是多个设计维度平衡妥协的结果。对于去中心化有过于浪漫的想法，或者认为区块链会像互联网一样改变一切的人恐怕是会失望的。&lt;/p&gt;
+
+&lt;p&gt;这段话就是再说阿里京东的系统&lt;/p&gt;
+
+&lt;p&gt;在集中式数据库的背景下做一下分布式处理，再引入一点pow机制&lt;/p&gt;
+
+&lt;p&gt;本质还是企业中心化的&lt;/p&gt;
+
+&lt;p&gt;只是提高了一定安全性&lt;/p&gt;
+
+&lt;p&gt;而新闻可能也是公司公关文，抓抓热点&lt;/p&gt;
+
+&lt;p&gt;在以前，用原来的传统方式，机构之间的业务是要做中心化的清结算的，要对帐，这是需要耗时间的。但用区块链技术来记帐就自动完成了清结算，事后不需要做清结算动作。多方参与的业务，参与时需要有信任，联盟链就把这个痛点解决了，让信任成本降低，运作更透明，效率更高。&lt;/p&gt;
+
+&lt;p&gt;但联盟链也会面临一些困难。现在不少公司做联盟链进程较慢，一是技术问题，另一个是大家对这个技术本身的认知问题，很多机构、行业对区块链这个事情的认知不是特别够，所以还在各方面的早期，技术需要提升，概念需要普及，认知要能够一致才行，多方面因素导致联盟链技术在推行过程中还需要时间。公有链因为TO C，且有经济刺激，再加上炒币，导致更快的吸引眼球，从而引起更多人关注。&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Mar 2018 03:30:00 -0600</pubDate>
+        <link>http://0.0.0.0:4000/2018/03/Is-the-blockchain-useful/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2018/03/Is-the-blockchain-useful/</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>孙不熟：房产投资GPS：7个高潜力指标</title>
-        <description>&lt;p&gt;&lt;strong&gt;一、买房如何选城市：&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;p&gt;整理自&lt;a href=&quot;http://fd.zaih.com/speech/player?speech_id=8036549703494277&quot;&gt;分答小讲&lt;/a&gt;，侵删。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;一、如何选城市：&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;基本面：
-处在上升期还是下坡路：过去五年的：常住人口，地方财政收入、本外币存款变动情况。
-三个指标必须全是正增长。&lt;/p&gt;
+    &lt;p&gt;基本面：&lt;/p&gt;
+
+    &lt;p&gt;处在上升期还是下坡路：过去五年的：常住人口，地方财政收入、本外币存款变动情况。&lt;/p&gt;
+
+    &lt;p&gt;三个指标必须全是正增长。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;题材：
@@ -27,7 +280,9 @@
     &lt;p&gt;城市背景：
 是否省会、行政等级是否高，或者靠近北上广深等超级城市。&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;两线一关：
+  &lt;li&gt;
+    &lt;p&gt;两线一关：&lt;/p&gt;
+
     &lt;ol&gt;
       &lt;li&gt;秦岭淮河线以南&lt;/li&gt;
       &lt;li&gt;胡焕庸线以东&lt;/li&gt;
@@ -160,8 +415,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Thu, 10 Aug 2017 00:00:00 -0500</pubDate>
-        <link>https://zenglei.net/2017/08/buy-house-tips/</link>
-        <guid isPermaLink="true">https://zenglei.net/2017/08/buy-house-tips/</guid>
+        <link>http://0.0.0.0:4000/2017/08/buy-house-tips/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/08/buy-house-tips/</guid>
         
         
       </item>
@@ -181,8 +436,8 @@
 &lt;p&gt;&lt;img src=&quot;/images/blog/detail/2017080401/1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Aug 2017 07:30:00 -0500</pubDate>
-        <link>https://zenglei.net/2017/08/good-bye-neymar/</link>
-        <guid isPermaLink="true">https://zenglei.net/2017/08/good-bye-neymar/</guid>
+        <link>http://0.0.0.0:4000/2017/08/good-bye-neymar/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/08/good-bye-neymar/</guid>
         
         
       </item>
@@ -196,8 +451,8 @@
 &lt;p&gt;可能有人会拿EVE的自由度和玩法的多样性来反驳，先别急，想想看，无论是挖矿还是货运，无论是群战还是独狼，操作模式是否一样的单调，一样的让人昏昏欲睡？一个游戏之所以永远处于小众状态，其实根本原因还是不好玩。无论你拿什么理由来夸他的逼格，这依然是不可反驳的事实。&lt;/p&gt;
 </description>
         <pubDate>Tue, 18 Jul 2017 06:30:42 -0500</pubDate>
-        <link>https://zenglei.net/2017/07/boring-eve/</link>
-        <guid isPermaLink="true">https://zenglei.net/2017/07/boring-eve/</guid>
+        <link>http://0.0.0.0:4000/2017/07/boring-eve/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/07/boring-eve/</guid>
         
         
       </item>
@@ -229,8 +484,8 @@
 &lt;p&gt;综上，猛料在哪？何恶之有？Google 一直是我很喜欢的一家企业，如果说国内有一家企业接近他的不作恶风格的话，我认为是这几年的腾讯。&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Jul 2017 00:00:00 -0500</pubDate>
-        <link>https://zenglei.net/2017/07/google-is-still-not-be-evil/</link>
-        <guid isPermaLink="true">https://zenglei.net/2017/07/google-is-still-not-be-evil/</guid>
+        <link>http://0.0.0.0:4000/2017/07/google-is-still-not-be-evil/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/07/google-is-still-not-be-evil/</guid>
         
         
       </item>
@@ -346,8 +601,8 @@
 &lt;p&gt;每个月 165元，每年 1980元。实现了高速的无痛爬墙、绝佳的影音体验，还有个写东西的自留地。值吗？真值。&lt;/p&gt;
 </description>
         <pubDate>Fri, 29 Jan 2016 23:05:39 -0600</pubDate>
-        <link>https://zenglei.net/2016/01/my-cloud-service-bill/</link>
-        <guid isPermaLink="true">https://zenglei.net/2016/01/my-cloud-service-bill/</guid>
+        <link>http://0.0.0.0:4000/2016/01/my-cloud-service-bill/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2016/01/my-cloud-service-bill/</guid>
         
         
         <category>未分类</category>
@@ -436,8 +691,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 24 Jan 2016 21:50:48 -0600</pubDate>
-        <link>https://zenglei.net/2016/01/cui-yu-tao-reading-notes/</link>
-        <guid isPermaLink="true">https://zenglei.net/2016/01/cui-yu-tao-reading-notes/</guid>
+        <link>http://0.0.0.0:4000/2016/01/cui-yu-tao-reading-notes/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2016/01/cui-yu-tao-reading-notes/</guid>
         
         
         <category>未分类</category>
@@ -485,8 +740,8 @@
 &lt;p&gt;国人其实还没有从云计算的迷茫中清醒过来。由于国家的大力投入，那些聪明人们，纷纷的将自己原有的业务，包装上了云计算的外衣，这不可避免的更加加剧了国人对于云计算的迷茫。也许再过上一两年，有了新的热点，那些聪明人转向了新的热点，国人们才能够看到什么才是真正的云计算吧。只是不知道到了那个时候，云计算大会上还能剩下哪些企业，或者那个是是不是还能够有云计算大会？&lt;/p&gt;
 </description>
         <pubDate>Sun, 27 May 2012 11:06:29 -0500</pubDate>
-        <link>https://zenglei.net/2012/05/the-trip-to-beijing/</link>
-        <guid isPermaLink="true">https://zenglei.net/2012/05/the-trip-to-beijing/</guid>
+        <link>http://0.0.0.0:4000/2012/05/the-trip-to-beijing/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2012/05/the-trip-to-beijing/</guid>
         
         
         <category>未分类</category>
@@ -528,8 +783,8 @@
 &lt;p&gt;欢迎来到苹果。&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 May 2012 12:32:42 -0500</pubDate>
-        <link>https://zenglei.net/2012/05/theres-your-lifes-work/</link>
-        <guid isPermaLink="true">https://zenglei.net/2012/05/theres-your-lifes-work/</guid>
+        <link>http://0.0.0.0:4000/2012/05/theres-your-lifes-work/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2012/05/theres-your-lifes-work/</guid>
         
         
         <category>未分类</category>
@@ -551,29 +806,8 @@
 &lt;p&gt;我从未忘过「我有一个博客」这件事。即使是在’06到’08这段我最疯狂的时间，我也在CC上留下了几十篇Raid记录——Raid基本上是我那个时间段的主旋律。我喜欢这种记录方式，在系统的记述中，可以避免自己思维的反复与遗失，可以让我的认识形成累积效应。近来由于工作繁重，博客又逐渐荒废了，我希望我还能坚持记录。&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Apr 2012 10:01:26 -0500</pubDate>
-        <link>https://zenglei.net/2012/04/i-have-a-blog/</link>
-        <guid isPermaLink="true">https://zenglei.net/2012/04/i-have-a-blog/</guid>
-        
-        
-        <category>未分类</category>
-        
-      </item>
-    
-      <item>
-        <title>你可能一辈子都是一个小人物</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://www.douban.com/group/topic/26074193/&quot; title=&quot;http://www.douban.com/group/topic/26074193/&quot; target=&quot;_blank&quot;&gt;豆瓣：有没有想过，也许一辈子你都是个小人物&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;人生还有很长，我最想知道的，不是自己未来的样子。&lt;/p&gt;
-
-&lt;p&gt;因为我从来不怀疑自己未来的样子，我每天都在向着那个方向努力。&lt;/p&gt;
-
-&lt;p&gt;虽然我不能改变世界，但是我也不让世界改变我，心神安宁，守中如一。&lt;/p&gt;
-
-&lt;p&gt;我最害怕的不是自己一辈子都是一个小人物，而是每天仍然是昨天的我，没有改变。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 04 Apr 2012 09:34:20 -0500</pubDate>
-        <link>https://zenglei.net/2012/04/little-people/</link>
-        <guid isPermaLink="true">https://zenglei.net/2012/04/little-people/</guid>
+        <link>http://0.0.0.0:4000/2012/04/i-have-a-blog/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2012/04/i-have-a-blog/</guid>
         
         
         <category>未分类</category>
